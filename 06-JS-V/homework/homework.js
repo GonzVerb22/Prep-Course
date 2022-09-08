@@ -63,11 +63,22 @@ String.prototype.reverse = function(){
     //  }
 
   class Persona {
-    constructor(/*Escribir los argumentos que recibe el constructor*/) {
+    constructor(nombre,apellido,edad,domicilio) { 
       // Crea el constructor:
+    } 
+  }
+      
+      
+      
+       
+  
+      
 
-    }
-}
+    
+
+  
+
+
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
