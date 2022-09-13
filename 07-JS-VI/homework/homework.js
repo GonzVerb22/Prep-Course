@@ -65,7 +65,7 @@ function filter(array) {
   let nvoArrray = array.filter(function (elementos){
     return elementos[0] === "a"
   })
-  return nvoArrray
+  return nvoArrray;
 }
 
 // No modificar nada debajo de esta línea
