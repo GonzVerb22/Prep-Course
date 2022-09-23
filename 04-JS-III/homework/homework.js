@@ -3,18 +3,21 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+return array.shift ()
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-}
+  return array.pop()
+} 
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return array.length
 }
 
 
@@ -23,6 +26,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  let arrayMod = []
+  for (let i = 0; i < array.length; i++){
+    arrayMod.push( array [i] + 1);
+  }
+  return arrayMod;
 }
 
 
@@ -30,6 +38,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+ array.push (elemento);
+ return array
 }
 
 
@@ -38,6 +48,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -47,6 +59,9 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  let frase= palabras.join(" ");
+  return frase;
+  
 }
 
 
@@ -54,13 +69,24 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-}
+  for(let i = 0 ; i < array.length; i++){
+  if (array[i] === elemento)
+    return true;
+  }
+    return false;
+  }
+
 
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+ let suma = 0;
+ for(let i = 0; i < numeros.length; i++){
+  suma += numeros[i];
+ }
+ return suma;
 }
 
 
@@ -68,6 +94,12 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  // [1,2,2,4,5,6,6,7,9,10]
+  let promedio = 0
+  for (const elemento of resultadosTest) {
+    promedio += resultadosTest.length    
+  } 
+      return promedio;
 }
 
 
